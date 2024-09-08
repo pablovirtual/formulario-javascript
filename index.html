@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularia actividad 1.2</title>
+</head>
+<body>
+    <h1>Obteniendo elementos HTML para su manipulación</h1>
+
+    
+<hr>
+<div id="info" ></div>
+<h3>Nombre</h3>
+<!--formulario-->
+<form name="formulario" action="validar.php" onsubmit="return validarFormulario();" method="POST" >
+    <!--cajas texto-->
+    <label for="nombre">Primer nombre</label><br>
+    <input type="text" name="nombre"><br>
+    <label for="apellidos">Apellidos</label><br>
+    <input type="text" name="apellido"><br>
+    <br>
+    <h3>Genero</h3>
+    <!--selector de opciones-->
+    <select name="genero">
+        <option value="0">--</option>
+        <option value="1">Hombre</option>
+        <option value="2">Mujer</option>
+        <option value="3">Otro</option> 
+    </select>
+    <br>
+    <br>
+    <h3>Selecciona tu pais</h3>
+    <!--checkbox-->
+    <label for="pais">Mexico</label>
+    <input type="checkbox" name ="pais" value="Mexico">
+    <label for="pais">Estados Unidos</label>
+    <input type="checkbox" name ="pais" value="Estados Unidos" >
+    <label for="pais">Canada</label>
+    <input type="checkbox" name ="pais" value="Canada">
+    <label for="pais">Colombia</label>
+    <input type="checkbox" name ="pais" value="Colombia">
+    <label for="pais">Brasil</label>
+    <input type="checkbox" name ="pais" value="Brasil">
+    <br>
+    <br>
+    <h3>Añade tus comentarios</h3>
+    <!--text area-->
+    <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+    <br>
+    <br>
+    <!--boton de envio-->
+   <button onclick="validarFormulario();">Enviar</button>
+</form>
+<br>
+
+<table>
+
+    <caption>Tabla de registro de usuarios</caption>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Genero</th>
+            <th>Pais</th>
+            <th>Comentarios</th>
+        </tr>
+</table>
+
+
+<!--script-->
+<script src="script.js"></script>
+</body>
+</html>
